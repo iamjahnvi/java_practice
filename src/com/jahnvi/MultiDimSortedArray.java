@@ -22,13 +22,12 @@ public class MultiDimSortedArray {
             if(matrix[r][c] == target){
                 return new int[]{r,c};
             } 
-            if(matrix[r][c] < target){
-                r++;
-            } else {
+            if(matrix[r][c] > target){
                 c--;
+            } else {
+                r++;
             }
         }
         return new int[]{-1,-1};
     }
 }
-
