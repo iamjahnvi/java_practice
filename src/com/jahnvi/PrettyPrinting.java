@@ -16,7 +16,18 @@ public class PrettyPrinting {
         System.out.println("a" +"b");
         // concatenation of characters
 
+        System.out.println();
+
         System.out.println('a' + 3);
+        // shows 100
+
+        System.out.println((char)('a' + 3));
+        //prints d
+
+
+
+        
+        
 
 
 
