@@ -27,7 +27,6 @@ public class Patterns {
             System.out.println();
         }
     }
-
     static void pattern3(int n3){
         // pattern3 - 0-1 pyramid
         for(int row = 1 ; row <= n3 ; row++){
@@ -41,7 +40,6 @@ public class Patterns {
             System.out.println();
         }
     }
-
     static void pattern4(int n4){
         for(int row=1 ; row <= n4 ; row++){
             for(int col = 1; col <= row ; col++){
@@ -51,7 +49,6 @@ public class Patterns {
         }
     }
 
-   
     static void pattern5(int n5){
         // pattern5 - reverse pyramid
         for(int row = n5 ; row >= 1 ; row--){
