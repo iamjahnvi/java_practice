@@ -60,6 +60,36 @@ public class Main {
         // the constructor of parent class is unknown to the properties of it's child class , and it's variables , like weight.
     
 
+        BoxWeight other2 = new BoxPrice(2.3 , 4.5 , 7.8 ,6 , 4);
+
+        System.out.println(other2.l);
+        System.out.println(other2.w);
+        System.out.println(other2.h);
+        System.out.println(other2.weight);
+
+        
+        // System.out.println(other2.price);
+        // price is now accessible because other2 is a BoxPrice reference
+        // so tho we can initialise price , we cannot actually print it , or access it.
+
+
+        Box other3 = new BoxPrice(2 , 3 , 4  , 5 , 6);
+
+        System.out.println(other3.l);
+        System.out.println(other3.w);
+        System.out.println(other3.h);
+
+
+        // System.out.println(other3.weight);
+        // System.out.println(other2.price);
+
+        // these two are again showing error as we cannot access properties of the child classes of the parent class-Box , because even tho the ref var is of type Box, the obj is of child class BoxPrice.
+
+        
+
+        // BoxPrice other4 = new Box(2 , 3 , 4 );
+
+        // this time tho we have access to all the varaibles of BoxPrice class , but we cannot really initialise them , becuase the constructor of parent class doesn;t know if these variables even exist.
 
 
 
