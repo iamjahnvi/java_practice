@@ -2,18 +2,20 @@ package com.jahnvi.properties.inheritance;
 
 public class BoxWeight extends Box{
     double weight;
+    // weight is new instance variable inside child class BoxWeight
 
-    public BoxWeight(){
+    BoxWeight(){
+        // default constructor in the child class BoxWeight
         this.weight = -1;
     }
 
-    public BoxWeight(double weight){
+    BoxWeight(double weight){
         this.weight = weight;
     }
 
-    public BoxWeight(double weight , double l , double w , double h){
+    BoxWeight(double weight , double l , double w , double h){
         super(l, w , h);
-        // calling parent class-box , constructor
+        // super is the keyword that we use to call the instance variables from parent class Box
 
         // if there is weight also defined in the parent class , then we can access it here thru "super" keyword
 
@@ -28,7 +30,7 @@ public class BoxWeight extends Box{
         // this.weight = weight; will give error.
     }
 
-    public BoxWeight(double weight , double side){
+    BoxWeight(double weight , double side){
         super(side);
         this.weight = weight;
     }
@@ -43,6 +45,8 @@ public class BoxWeight extends Box{
     // now that here the other that we are passing in the super is a boxweight type , taking a box type.
 
     // it is exactly same as saying that the ref var "other" , is of type BoxWeight and the object is of type Box.
+
+    
 
 
 
