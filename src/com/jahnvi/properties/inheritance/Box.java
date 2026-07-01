@@ -1,12 +1,14 @@
 package com.jahnvi.properties.inheritance;
 
+// Box is a blueprint for formation of real boxes
 public class Box {
     double l;
     double h;
     double w;
     double Weight;
+    // all of these are instant variables
 
-    // constructor of Box class
+    // deafault constructor of Box class
     Box (){
 
         super();
