@@ -29,6 +29,12 @@ public class PolymorphismTheory {
 
         // it is a mechanism by which a call to a overriden method (it is a method which is defined in both child and parent class, with same name , type and number of arguments and return type) is resolved at runtime than that at compile time.
 
+        // in the example of shapes and circle , we observed that there is a area method inside the super class - shapes, and we can call shapes by creating an ref var of it, but what method will be called will depend on the object, during runtime , during dynamic method dispatch.
+
+        // for example the area was inside triangle , circle , square etc but still it was the type of object that determined what method has to run in order to display output
+
+
+
 
 
 
