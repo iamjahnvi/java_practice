@@ -5,12 +5,14 @@ public class Main {
     public static void main(String[] args) {
 
         Box box1  = new Box();
-        // box is an object of a constructor named as Box.
+        // box1 is a ref var of parent class Box , which creates a new object by using the default constructor
 
         System.out.println(box1.l + " " + box1.w + " " + box1.h);
-        // it will run the constructor with no arguments.
+        // it will run the default constructor with no arguments.
 
         Box box2 = new Box(4);
+        // box2 is a ref var of class Box , whose object will be made by passing argument in the constructor with 1 instance variable in it
+
         System.out.println(box2.l + " " + box2.w + " " + box2.h);
 
         Box box3 = new Box(3.2 , 4.5 , 6.7);
