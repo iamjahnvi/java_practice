@@ -6,6 +6,12 @@ public class Box {
     double h;
     double w;
     double Weight;
+    private String colour;
+
+    public String getC(){
+        return colour;
+    }
+
     // all of these are instant variables
 
     // deafault constructor of Box class
@@ -42,9 +48,15 @@ public class Box {
         this.w = old.w;
     }
 
+    static void  greeting(){
+        System.out.println("Hey i am in box class , greetings");
+    }
+
     public void information(){
         System.out.println("running the box");
     }
+
+
 }
 // all the classes that we make are child to the Object() class.
 
