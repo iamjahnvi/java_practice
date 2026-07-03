@@ -1,6 +1,5 @@
 package com.access;
 
-import java.util.Arrays;
 
 public class subClass extends A{
     
