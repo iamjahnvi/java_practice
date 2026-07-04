@@ -8,6 +8,9 @@ public class Main {
         // box1 is a ref var of parent class Box , which creates a new object by using the default constructor
 
         System.out.println(box1.l + " " + box1.w + " " + box1.h);
+        box1.getC();
+        // even tho the colour of box is private , we still can acess it via the getter method inside encapsulation internally.
+        
         // it will run the default constructor with no arguments.
 
         Box box2 = new Box(4);
@@ -94,8 +97,18 @@ public class Main {
         // this time tho we have access to all the varaibles of BoxPrice class , but we cannot really initialise them , becuase the constructor of parent class doesn;t know if these variables even exist.
 
 
+        Box.greeting();
+        // we surely can call static methods but can we override thme?
 
+        Box box = new BoxWeight();
+        Box.greeting();
+        // printing "Hey i am in box class , greetings"
+        // static methods are not dependent on objects , hence this is the reason , that it is able to access and call only the method in parent class only.
+        // tho they can be inherited , they can't be overriden.
 
+        // all in one, overriden depends on objects , and static methods are not dependent on objects , hence static methods cannot be overriden
+
+       
 
 
 
