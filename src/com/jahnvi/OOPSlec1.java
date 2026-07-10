@@ -66,10 +66,13 @@ public class OOPSlec1 {
 
         System.out.println(student3.name);
 
+        Student one = new Student();
+        Student two = one;
 
+        one.name = "something something";
+        System.out.println(two.name);
 
-    
-
+        // both of them are pointing towards the same object
     }
 
 
@@ -109,13 +112,8 @@ public class OOPSlec1 {
             this.rno = other.rno;
             this.marks = other.marks;
         }
-
-
-
     }
-
     // variables inside the object like rno, name and marks in this case are known as instant variable.
     // . is called a separator or dot operator
-
 
 }
